@@ -24,7 +24,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -41,14 +41,14 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -162,7 +162,7 @@
 Revision 2.3
 Spencer Boyer
 boyer2@uw.edu</text>
-<text x="13.1" y="20.9" size="1" layer="22" rot="MR90">7    6    5    4    3    2    1    0</text>
+<text x="14" y="21" size="1" layer="21" rot="R90">7    6    5    4    3    2    1    0</text>
 </plain>
 <libraries>
 <library name="spencer">
@@ -170,14 +170,6 @@ boyer2@uw.edu</text>
 <package name="RPI3H">
 <description>Package for the Raspberry Pi 3 board created by Dave Young for www.elemenet14.com based on documented dimensions and board measurements.
 For more documentation, please visit http://www.raspberrypi.org/documentation/hardware/raspberrypi/</description>
-<wire x1="0" y1="53" x2="0" y2="3" width="0.127" layer="51"/>
-<wire x1="0" y1="3" x2="3" y2="0" width="0.127" layer="51" curve="90"/>
-<wire x1="3" y1="0" x2="82" y2="0" width="0.127" layer="51"/>
-<wire x1="82" y1="0" x2="85" y2="3" width="0.127" layer="51" curve="90"/>
-<wire x1="85" y1="3" x2="85" y2="53" width="0.127" layer="51"/>
-<wire x1="85" y1="53" x2="82" y2="56" width="0.127" layer="51" curve="90"/>
-<wire x1="82" y1="56" x2="3" y2="56" width="0.127" layer="51"/>
-<wire x1="3" y1="56" x2="0" y2="53" width="0.127" layer="51" curve="90"/>
 <hole x="3.5" y="3.5" drill="2.75"/>
 <hole x="61.5" y="3.5" drill="2.75"/>
 <hole x="3.5" y="52.5" drill="2.75"/>
@@ -186,8 +178,6 @@ For more documentation, please visit http://www.raspberrypi.org/documentation/ha
 <circle x="61.5" y="3.5" radius="3" width="0.127" layer="51"/>
 <circle x="61.5" y="52.5" radius="3" width="0.127" layer="51"/>
 <circle x="3.5" y="52.5" radius="3" width="0.127" layer="51"/>
-<wire x1="50" y1="0" x2="50.5" y2="0" width="0.127" layer="51"/>
-<wire x1="56.5" y1="0" x2="57" y2="0" width="0.127" layer="51"/>
 <pad name="P$1" x="8.37" y="51.23" drill="1.016" shape="square"/>
 <pad name="P$2" x="8.3566" y="53.7718" drill="1.016"/>
 <pad name="P$3" x="10.8966" y="51.2318" drill="1.016"/>
@@ -1033,10 +1023,10 @@ design rules under a new name.</description>
 <wire x1="19.5" y1="46.66" x2="19.5" y2="46.9" width="1.5" layer="16"/>
 <wire x1="19.5" y1="46.9" x2="19.32560625" y2="46.9" width="1.5" layer="16"/>
 <wire x1="19.32560625" y1="46.9" x2="19.32560625" y2="47.87439375" width="1.5" layer="16"/>
-<wire x1="19.4" y1="53.6" x2="20.079590625" y2="53.6" width="0" layer="19" extent="16-16"/>
-<wire x1="58.09" y1="30.8" x2="58" y2="31" width="0" layer="19" extent="16-16"/>
 <wire x1="19.5" y1="46.9" x2="20.105209375" y2="46.9" width="1.5" layer="16"/>
 <wire x1="20.105209375" y1="46.9" x2="20.105209375" y2="47" width="1.5" layer="16"/>
+<wire x1="19.4" y1="53.6" x2="20.079590625" y2="53.6" width="0" layer="19" extent="16-16"/>
+<wire x1="58.09" y1="30.8" x2="58" y2="31" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND">
 <contactref element="REGULATOR" pad="GND2"/>
@@ -1177,8 +1167,8 @@ design rules under a new name.</description>
 <wire x1="5.2012" y1="16.3988" x2="5.2012" y2="10.2012" width="0.254" layer="16"/>
 <wire x1="11.3988" y1="16.3988" x2="5.2012" y2="16.3988" width="0.254" layer="16"/>
 <wire x1="11.3988" y1="10.2012" x2="5.2012" y2="10.2012" width="0.254" layer="16"/>
+<wire x1="26.9" y1="41.58" x2="19.4" y2="41.58" width="1.5" layer="1"/>
 <wire x1="30.5166" y1="45.301809375" x2="42.5" y2="45.7" width="0" layer="19" extent="1-1"/>
-<wire x1="29.514790625" y1="41.58" x2="26.9" y2="41.58" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="3V3">
 <contactref element="ADC0" pad="VREF"/>
@@ -1289,7 +1279,6 @@ design rules under a new name.</description>
 <wire x1="40.91" y1="7.7" x2="40.91" y2="9.454790625" width="1.5" layer="16"/>
 <wire x1="33.29" y1="7.7" x2="35.791365625" y2="7.7" width="1.5" layer="16"/>
 <wire x1="35.791365625" y1="7.7" x2="35.79164375" y2="7.699884375" width="1.5" layer="16" curve="-45"/>
-<wire x1="35.73" y1="12.2" x2="38.27" y2="12.2" width="0" layer="19" extent="1-1"/>
 <wire x1="33.29" y1="1.9" x2="33.29" y2="2.27715625" width="1.5" layer="16"/>
 <wire x1="33.29" y1="2.27715625" x2="33.348578125" y2="2.418578125" width="1.5" layer="16" curve="-45"/>
 <wire x1="33.348578125" y1="2.418578125" x2="35.83" y2="4.9" width="1.5" layer="16"/>
@@ -1297,6 +1286,7 @@ design rules under a new name.</description>
 <wire x1="20" y1="39" x2="21.5" y2="39" width="1.5" layer="16"/>
 <wire x1="20" y1="39" x2="19.4" y2="39" width="0.254" layer="16"/>
 <wire x1="19.4" y1="39" x2="19.4" y2="39.04" width="0.254" layer="16"/>
+<wire x1="35.73" y1="12.2" x2="38.27" y2="12.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <wire x1="43.7" y1="48.1" x2="43.7" y2="47.9" width="0.254" layer="1"/>
