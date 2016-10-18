@@ -3825,7 +3825,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </classes>
 <parts>
 <part name="PCB1" library="spencer" deviceset="RPI3" device=""/>
-<part name="JP1" library="spencer" deviceset="POLULU5VREGULATOR" device=""/>
+<part name="REGULATOR" library="spencer" deviceset="POLULU5VREGULATOR" device="" value="REGULATOR"/>
 <part name="ADC0" library="spencer" deviceset="MCP3208" device=""/>
 <part name="ADC1" library="spencer" deviceset="MCP3208" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH_BREAD" value="POWER_JACKPTH_BREAD"/>
@@ -3833,21 +3833,21 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="R2" library="SparkFun-Resistors" deviceset="10KOHM-1/4W-1%(PTH)" device="HORIZ" value="10k"/>
 <part name="MOSFET1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FQP30N06L"/>
 <part name="MOSFET0" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="FQP30N06L"/>
-<part name="PUMP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
-<part name="PUMP0" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="PUMP1" library="pinhead" deviceset="PINHD-1X2" device="" value="PUMP1"/>
+<part name="PUMP0" library="pinhead" deviceset="PINHD-1X2" device="" value="PUMP0"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
-<part name="HL1" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="VL1" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="VR1" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="HR1" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="HL0" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="VL0" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="VR0" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="HR0" library="pinhead" deviceset="PINHD-1X6" device=""/>
-<part name="GND" library="pinhead" deviceset="PINHD-1X8" device=""/>
-<part name="AIN" library="pinhead" deviceset="PINHD-1X8" device=""/>
-<part name="3V3" library="pinhead" deviceset="PINHD-1X8" device=""/>
+<part name="HL1" library="pinhead" deviceset="PINHD-1X6" device="" value="HL1"/>
+<part name="VL1" library="pinhead" deviceset="PINHD-1X6" device="" value="VL1"/>
+<part name="VR1" library="pinhead" deviceset="PINHD-1X6" device="" value="VR1"/>
+<part name="HR1" library="pinhead" deviceset="PINHD-1X6" device="" value="HR1"/>
+<part name="HL0" library="pinhead" deviceset="PINHD-1X6" device="" value="HL0"/>
+<part name="VL0" library="pinhead" deviceset="PINHD-1X6" device="" value="VL0"/>
+<part name="VR0" library="pinhead" deviceset="PINHD-1X6" device="" value="VR0"/>
+<part name="HR0" library="pinhead" deviceset="PINHD-1X6" device="" value="HR0"/>
+<part name="GND" library="pinhead" deviceset="PINHD-1X8" device="" value="GND"/>
+<part name="AIN" library="pinhead" deviceset="PINHD-1X8" device="" value="AIN"/>
+<part name="3V3" library="pinhead" deviceset="PINHD-1X8" device="" value="3v3"/>
 </parts>
 <sheets>
 <sheet>
@@ -3855,7 +3855,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </plain>
 <instances>
 <instance part="PCB1" gate="G$1" x="0" y="0"/>
-<instance part="JP1" gate="A" x="27.94" y="71.12"/>
+<instance part="REGULATOR" gate="A" x="27.94" y="71.12"/>
 <instance part="ADC0" gate="MCP3208$1" x="-53.34" y="-58.42"/>
 <instance part="ADC1" gate="MCP3208$1" x="-2.54" y="-60.96"/>
 <instance part="J1" gate="G$1" x="2.54" y="66.04"/>
@@ -3959,7 +3959,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="VOUT"/>
+<pinref part="REGULATOR" gate="A" pin="VOUT"/>
 <junction x="27.94" y="66.04"/>
 <label x="22.86" y="66.04" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
@@ -4026,7 +4026,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="GND2"/>
+<pinref part="REGULATOR" gate="A" pin="GND2"/>
 <junction x="27.94" y="68.58"/>
 <label x="22.86" y="68.58" size="1.27" layer="95" rot="MR0" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="GND"/>
@@ -4034,7 +4034,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <wire x1="5.08" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="GND1"/>
+<pinref part="REGULATOR" gate="A" pin="GND1"/>
 <junction x="27.94" y="71.12"/>
 <label x="22.86" y="71.12" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
@@ -4231,12 +4231,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <label x="-48.26" y="-15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="EN"/>
-<junction x="27.94" y="76.2"/>
-</segment>
-</net>
 <net name="PUMP1" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -4265,7 +4259,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <segment>
 <pinref part="J1" gate="G$1" pin="PWR"/>
 <junction x="5.08" y="73.66"/>
-<pinref part="JP1" gate="A" pin="VIN"/>
+<pinref part="REGULATOR" gate="A" pin="VIN"/>
 <junction x="27.94" y="73.66"/>
 <wire x1="5.08" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 </segment>
@@ -4273,11 +4267,13 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <pinref part="PUMP1" gate="G$1" pin="1"/>
 <junction x="-48.26" y="55.88"/>
 <label x="-53.34" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-48.26" y1="55.88" x2="-53.34" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PUMP0" gate="G$1" pin="1"/>
 <junction x="-48.26" y="88.9"/>
 <label x="-53.34" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-48.26" y1="88.9" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -4488,13 +4484,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <wire x1="-2.54" y1="-152.4" x2="-2.54" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="PCB1" gate="G$1" pin="GPIO21"/>
-<junction x="48.26" y="15.24"/>
-<label x="48.26" y="17.78" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="AIN" gate="A" pin="1"/>
@@ -4588,6 +4577,10 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="115,1,-68.58,59.69,12V,,,,,"/>
+<approved hash="115,1,16.51,73.66,12V,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
